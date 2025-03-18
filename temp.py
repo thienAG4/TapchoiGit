@@ -10,5 +10,5 @@ users_collection = db['users']
 expenses_collection = db['expenses']
 
 
-user=users_collection.find_one({'username':"Thien"})
-print(user["password"])
+user=users_collection.find_one({'username': "Thien"})
+print(user)

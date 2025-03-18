@@ -9,7 +9,7 @@ class API:
     def connector(self): #connect tới localhost MongoDB
         load_dotenv(find_dotenv())
         host = os.getenv("HOSTNAME") #truy xuất giá trị của biến môi trường HOSTNAME
-        self.client = MongoClient(host)
+        self.client = MongoClient("mongodb://localhost:27017/")
         self.db = self.client['Group11']
         self.users_collection = self.db['users']
         self.expenses_collection = self.db['expenses']
