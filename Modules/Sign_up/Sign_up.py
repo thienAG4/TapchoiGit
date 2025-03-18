@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\Do_An_KTLT\Modules\Sign_up\Sign_up.ui'
+# Form implementation generated from reading ui file 'D:\Do_an_cuoi_ki\Modules\Sign_up\Sign_up.ui'
 #
 # Created by: PyQt6 UI code generator 6.7.1
 #
@@ -36,7 +36,7 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.background.setFont(font)
         self.background.setText("")
-        self.background.setPixmap(QtGui.QPixmap("D:\\Do_An_KTLT\\Modules\\Sign_up\\../../Images/Login/BG.png"))
+        self.background.setPixmap(QtGui.QPixmap("D:\\Do_an_cuoi_ki\\Modules\\Sign_up\\../../Images/Login/BG.png"))
         self.background.setObjectName("background")
         self.groupBox = QtWidgets.QGroupBox(parent=self.centralwidget)
         self.groupBox.setGeometry(QtCore.QRect(40, 30, 520, 640))
@@ -117,12 +117,12 @@ class Ui_MainWindow(object):
         self.logoUEL = QtWidgets.QLabel(parent=self.groupBox)
         self.logoUEL.setGeometry(QtCore.QRect(70, 35, 30, 30))
         self.logoUEL.setText("")
-        self.logoUEL.setPixmap(QtGui.QPixmap("D:\\Do_An_KTLT\\Modules\\Sign_up\\../../Images/Login/LogoUEL.png"))
+        self.logoUEL.setPixmap(QtGui.QPixmap("D:\\Do_an_cuoi_ki\\Modules\\Sign_up\\../../Images/Login/LogoUEL.png"))
         self.logoUEL.setObjectName("logoUEL")
         self.logoUEL_2 = QtWidgets.QLabel(parent=self.groupBox)
         self.logoUEL_2.setGeometry(QtCore.QRect(110, 35, 30, 30))
         self.logoUEL_2.setText("")
-        self.logoUEL_2.setPixmap(QtGui.QPixmap("D:\\Do_An_KTLT\\Modules\\Sign_up\\../../Images/Login/LogoFIS.png"))
+        self.logoUEL_2.setPixmap(QtGui.QPixmap("D:\\Do_an_cuoi_ki\\Modules\\Sign_up\\../../Images/Login/LogoFIS.png"))
         self.logoUEL_2.setObjectName("logoUEL_2")
         self.label_welcome = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_welcome.setGeometry(QtCore.QRect(690, 180, 391, 41))

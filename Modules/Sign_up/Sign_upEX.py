@@ -2,6 +2,9 @@ import json
 import os
 from PyQt6.QtWidgets import QMainWindow, QApplication, QMessageBox, QLineEdit, QLabel, QPushButton, QVBoxLayout, QDialog
 from Modules.Sign_up.Sign_up import Ui_MainWindow
+# from Modules.Login.Sign_inEx import Sign_inEX
+import Modules.Login.Sign_inEx
+
 import sys
 from Api.Signup_API import SignupAPI
 
@@ -13,9 +16,19 @@ class Sign_upEx(QMainWindow, Ui_MainWindow, SignupAPI):
     def setupUi(self, MainWindow):
         super().setupUi(MainWindow)
         self.MainWindow = MainWindow
-        self.pushRegister.clicked.connect(self.register)
-        self.checkShowPassword.stateChanged.connect(self.show_password)
 
+        self.checkShowPassword.stateChanged.connect(self.show_password)
+        self.pushSign_in.clicked.connect(self.sign_in)
+        self.pushRegister.clicked.connect(self.register)
+
+        self.Login=self.some_other_function()
+
+    # Sign_upEX.py
+
+    def some_other_function(self):
+        from Modules.Login.Sign_inEx import Sign_inEX
+        obj = Sign_inEX()
+        return obj
     def register(self):
         username = self.lineUserName.text().strip()
         password = self.linePassword.text().strip()
@@ -40,6 +53,12 @@ class Sign_upEx(QMainWindow, Ui_MainWindow, SignupAPI):
         else:
             self.linePassword.setEchoMode(QLineEdit.EchoMode.Password)
             self.lineConfirm.setEchoMode(QLineEdit.EchoMode.Password)
+
+    def sign_in(self):
+        self.Login_Window = QMainWindow()
+        self.Login.setupUi(self.Login_Window)
+        self.Login_Window.show()
+        self.MainWindow.hide()
 
     def show(self):
         self.MainWindow.show()
