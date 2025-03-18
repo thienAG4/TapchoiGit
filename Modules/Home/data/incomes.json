@@ -1,0 +1,38 @@
+[
+    {
+      "category": "Salary",
+      "date": "02/03/2025",
+      "details": "Monthly",
+      "amount": "4000.00"
+    },
+    {
+      "category": "Interests",
+      "date": "01/03/2025",
+      "details": "Pantry",
+      "amount": "-100.00"
+    },
+    {
+      "category": "Rent",
+      "date": "28/02/2025",
+      "details": "Rent",
+      "amount": "-674.40"
+    },
+    {
+      "category": "Transport",
+      "date": "26/02/2025",
+      "details": "Fuel",
+      "amount": "-4.13"
+    },
+    {
+      "category": "Food",
+      "date": "27/02/2025",
+      "details": "Dinner",
+      "amount": "-70.40"
+    },
+    {
+      "category": "Transport",
+      "date": "25/02/2025",
+      "details": "Fuel",
+      "amount": "-4.13"
+    }
+  ]
